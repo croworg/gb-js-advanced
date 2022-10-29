@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<main>
+    <div class="border">
+        <h2>Собери свой бургер</h2>
+        <div class="size border">
+            <h3>Выберите размер бургера:</h3>
+            <ul>
+                <li><input type="radio" name="size" id="big" data-price="100" data-ccal="40">Большой (100 рублей, 40 ккал)</li>
+                <li><input type="radio" name="size" id="small" data-price="50" data-ccal="20">Малый (50 рублей, 20 ккал)</li>
+            </ul>
+        </div>
+        <div class="filling border">
+            <h3>Выберите начинку бургера:</h3>
+            <ul>
+                <li><input type="radio" name="filling" id="cheese" data-price="10" data-ccal="20">Сыр (10 рублей, 20 ккал)</li>
+                <li><input type="radio" name="filling" id="salad" data-price="20" data-ccal="5">Салат (20 рублей, 5 ккал)</li>
+                <li><input type="radio" name="filling" id="potato" data-price="15" data-ccal="10">Картофель (15 рублей, 10 ккал)</li>
+            </ul>
+        </div>
+        <div class="options border">
+            <h3>Выберите доп. опции:</h3>
+            <ul>
+                <li><input type="checkbox" name="" id="spice" data-price="15" data-ccal="0">Посыпать приправой (15 рублей, 0 ккал)</li>
+                <li><input type="checkbox" name="" id="mayo" data-price="20" data-ccal="5">Полить майонезом (20 рублей, 5 ккал)</li>
+            </ul>
+        </div>
+        <button>Собрать!</button>
+        <p>
+            Итоговая стоимость: <span class="total-price">0</span><br>
+            Энергетическая ценность: <span class="total-energy">0</span>
+        </p>
+    </div>
+</main>
+</body>
+</html>
