@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eShop</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light bg-dark justify-content-between px-3">
+        <a class="navbar-brand text-light" href="#">
+            <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            e-Shop
+        </a>
+        <div class="cart">
+            <button class="cart-button btn align-middle btn-outline-light" type="submit">Корзина</button>
+            <div class="cart-block invisible"></div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="goods-list row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-2 m-2"></div>
+</main>
+</body>
+</html>
