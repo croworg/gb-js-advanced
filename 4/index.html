@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesoon 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<h3 class="heading">Lesson 4: Find and replace.</h3>
+<p class="raw-text">One: 'Hi Mary.'
+  Two: 'Oh, hi.'
+  One: 'How are you doing?'
+  Two: 'I'm doing alright. How about you?'
+  One: 'Not too bad. The weather is great isn't it?'
+  Two: 'Yes. It's absolutely beautiful today.'
+  One: 'I wish it was like this more frequently.'
+  Two: 'Me too.'
+  One: 'So where are you going now?'
+  Two: 'I'm going to meet a friend of mine at the department store.'
+  One: 'Going to do a little shopping?'
+  Two: 'Yeah, I have to buy some presents for my parents.'
+  One: 'What's the occasion?'
+  Two: 'It's their anniversary.'
+  One: 'That's great. Well, you better get going. You don't want to be late.'
+  Two: 'I'll see you next time.'
+  One: 'Sure. Bye.'
+</p>
+<p>Заменить одинарные кавычки на двойные:</p>
+<div class="buttons">
+  <button class="replaceAll">Все</button>
+  <button class="replaceEdges">Вокруг фразы</button>
+  <button class="reset">Сбросить</button>
+</div>
+<div class="feedback-container">
+  <h3 class="heading">Форма обратной связи</h3>
+  <form class="feedback-form" action="#">
+    <ul>
+      <li>
+        <label for="name">Имя</label><input class="name" id="name" type="text" placeholder="Иван"><div class="hint">Допустимы только буквы</div>
+      </li>
+      <li>
+        <label for="phone">Телефон</label><input class="phone" id="phone" type="text" placeholder="+7(000)000-0000"><div class="hint">Не соответсвует формату +7(000)000-0000</div>
+      </li>
+      <li>
+        <label for="email">E-mail</label><input class="email" id="email" type="text" placeholder="my@mail.ru"><div class="hint">Некорректный email адрес</div>
+      </li>
+      <li>
+        <label for="message">Сообщение</label><textarea id="message" class="message"></textarea><div class="hint">Вы не написали сообщение</div>
+      </li>
+      <li>
+        <button class="form-submit" type="submit">Отправить</button>
+      </li>
+    </ul>
+  </form>
+</div>
+</body>
+</html>
