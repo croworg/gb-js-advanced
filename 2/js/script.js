@@ -1,7 +1,7 @@
-'use strict'
+"use strict"
 
 class ProductList {
-    constructor(container = '.products') {
+    constructor(container = '.goods-list') {
         this.container = container;
         this.goods = [];
         this.allProducts = [];
@@ -19,8 +19,8 @@ class ProductList {
     }
 
     render() {
-        const cardsElem = document.querySelector('.goods-list');
-        for(let item of this.goods) {
+        const cardsElem = document.querySelector(this.container);
+        for (let item of this.goods) {
             const productObj = new ProductItem(item, item.img);
             this.allProducts.push(productObj);
             cardsElem.insertAdjacentHTML('beforeend', productObj.render());
@@ -30,6 +30,7 @@ class ProductList {
     getSum() {
         let sum = this.allProducts.reduce((acc, item) => acc + item.price, 0);
         console.log(sum);
+        alert(sum);
     }
 }
 
@@ -43,16 +44,17 @@ class ProductItem {
 
     render() {
         return `
-<div class="col">
-    <div class="card text-right bg-light">
-        <img class="card-img-top" src="${this.img}" alt="Card image">
-        <div class="card-body">
-            <h5 class="card-title">${this.name}</h5>
-            <p class="card-text">Price: ${this.price}</p>
-            <a href="#" class="btn btn-sm btn-primary">Add to cart</a>
-        </div>
-    </div>
-</div>`;
+            <div class="col">
+                <div class="card text-right bg-light">
+                    <img class="card-img-top" src="${this.img}" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">${this.name}</h5>
+                        <p class="card-text">Price: ${this.price}</p>
+                        <a href="#" class="btn btn-sm btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        `;
     }
 }
 
@@ -75,6 +77,6 @@ class Cart {
     }
 }
 
-const productList = new  ProductList();
+const productList = new ProductList();
 productList.render();
 productList.getSum();
