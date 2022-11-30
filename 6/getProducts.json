@@ -1,0 +1,24 @@
+[
+  {
+    "id_product": 124,
+    "product_name": "Keyboard",
+    "price": 1600
+  },
+  {
+    "id_product": 457,
+    "product_name": "Gamepad",
+    "price": 3000
+  },
+  {
+    "id_product": 458,
+    "product_name": "Monitor 19\"",
+    "price": 310,
+    "img": "img/mon19.jpg"
+  },
+  {
+    "id_product": 459,
+    "product_name": "Monitor 24\"",
+    "price": 490,
+    "img": "img/mon24.jpg"
+  }
+]
