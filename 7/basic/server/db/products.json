@@ -1,0 +1,27 @@
+[
+  {
+    "id_product": 100,
+    "product_name": "Laptop",
+    "price": 990
+  },
+  {
+    "id_product": 101,
+    "product_name": "Gamepad",
+    "price": 19
+  },
+  {
+    "id_product": 102,
+    "product_name": "Keyboard",
+    "price": 16
+  },
+  {
+    "id_product": 103,
+    "product_name": "Mouse",
+    "price": 11
+  },
+  {
+    "id_product": 104,
+    "product_name": "Monitor",
+    "price": 390
+  }
+]
